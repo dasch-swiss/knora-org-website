@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>KNORA | Knowledge Organization, Representation and Annotation</title>
+        <link rel='shortcut icon' href='favicon.ico'>
+        <meta name='description' content='Knora (Knowledge Organization, Representation, and Annotation) is a software framework for storing, sharing, and working with primary sources and data in the humanities. Created by the Digital Humanities Lab (DHLab Basel), University of Basel.'>
+        <meta name='keywords' content='knora, knowledge, organization, representation, annotation, dhlab, digital, humanities, basel, switzerland'>
+
+        <meta name='viewport' content='width=480, user-scalable=no'>
+        <meta name='viewport' content='initial-scale=0.8, maximum-scale=1'>
+
+        <script type='text/javascript' src='js/jquery-1.10.2.min.js'></script>
+        <script type='text/javascript' src='js/jquery.center.js'></script>
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.blue_grey-indigo.min.css">
+        <script src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+
+        <style>
+            @import url('http://fonts.googleapis.com/css?family=Raleway:400,700');
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            body {
+                font-family: 'Raleway', Palatino, sans-serif;
+                letter-spacing: 2px;
+            }
+            a {
+                color: rgb(96, 125, 139);
+                text-decoration: none;
+            }
+            header img.logo {
+                height: 36px;
+                width: auto;
+            }
+            .mdl-navigation__button {
+                margin: 0 0 0 40px;
+            }
+            .mdl-menu--bottom-left {
+                margin-left: -15px;
+            }
+
+            div.banner {
+                margin-top: 10vh;
+                text-align: center;
+            }
+            img.logo {
+                width: 640px;
+            }
+            h4 {
+                font-family: 'Raleway', Palatino, sans-serif;
+                font-weight: bolder;
+                text-align: center;
+            }
+            p {
+                max-width: 90%;
+                margin-left: auto;
+                margin-right: auto;
+                line-height: 1.5;
+                text-align: center;
+                font-size: medium;
+            }
+
+            div.info {
+                margin-top: 96px;
+            }
+
+            .mdl-grid {
+                min-height: 88vh;
+            }
+
+            iframe {
+                margin-top: 48px;
+                margin-bottom: 24px;
+                width: 640px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            object {
+                width: 100%;
+                height: 900px;
+                border: 1px solid rgb(146,146,146);
+            }
+            footer {
+            }
+            /* Phone */
+            @media screen and (max-width: 640px) {
+                img.logo {
+                    width: 320px;
+                }
+                iframe {
+                    width: 480px;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <!-- Simple header with fixed tabs. -->
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header
+                mdl-layout--fixed-tabs">
+            <header class="mdl-layout__header mdl-layout__header--transparent">
+                <div class="mdl-layout__header-row">
+                    <!-- Title -->
+                    <span class="mdl-layout-title">
+                        <!--
+                        <a href="http://knora.org">
+                            Knora
+                            <img src="media/images/knora-logo.png" alt='KNORA' title='Knowledge Organization, Representation, and Annotation' class='logo'>
+                        </a>
+                    -->
+                    </span>
+                    <!-- Add spacer, to align navigation to the right -->
+                    <div class="mdl-layout-spacer"></div>
+                    <!-- Navigation -->
+                    <!-- Navigation. We hide it in small screens. -->
+                    <nav class="mdl-navigation">
+                        <!-- Right aligned menu below button -->
+                        <button id="doc-menu-lower" class="mdl-button mdl-js-button mdl-navigation__button">
+                            <!--<i class="material-icons">more_vert</i>-->
+                            Documentation
+                        </button>
+
+                        <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="doc-menu-lower">
+                            <a href="http://knora.org/documentation/manual/rst/" class="center">
+                                <li class="mdl-menu__item">
+                                    Knora documentation
+                                </li>
+                            </a>
+                            <a href="http://knora.org/documentation/api/" class="center">
+                                <li class="mdl-menu__item">
+                                    Knora API format documentation
+                                </li>
+                            </a>
+                        </ul>
+                        <a href="https://github.com/dhlab-basel/Knora" target="_blank" class="mdl-navigation__button">
+                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--primary">
+                                Code on GitHub
+                            </button>
+                        </a>
+                    </nav>
+                </div>
+            </header>
+
+            <main class="mdl-layout__content">
+                <div class="mdl-grid">
+                    <div class="mdl-cell mdl-cell--2-col mdl-cell--1-col-tablet mdl-cell--0-col-phone"></div>
+                    <div class="mdl-cell mdl-cell--8-col mdl-cell--10-col-tablet mdl-cell--12-col-phone">
+                        <!-- The Knora information goes here -->
+                        <div class="banner">
+                            <h1><img src="media/images/knora-logo.png" alt='KNORA' title='Knowledge Organization, Representation, and Annotation' class='logo'></h1>
+                            <h4>Knowledge Organization, Representation, and Annotation</h4>
+                        </div>
+                        <div class="info">
+                            <p>Knora is a software framework for storing, sharing, and working with primary sources and data in the humanities.</p>
+                            <iframe width="640" height="320" src="https://www.youtube.com/embed/9e1xvKWuqAk?rel=0" frameborder="0" allowfullscreen></iframe>
+                            <br/><br/>
+                            <p>Developed by the
+                                <a href="http://dhlab.unibas.ch/">Digital Humanities Lab</a>
+                                at the
+                                <a href="https://unibas.ch/">University of Basel</a>, and supported by the
+                                <a href="http://www.sagw.ch/en/sagw.html">Swiss Academy of Humanities and Social Sciences</a>.</p>
+                            <p>Knora is
+                                <a href="http://www.gnu.org/philosophy/free-sw.en.html">free software</a>, released under the
+                                <a href="http://www.gnu.org/licenses/agpl-3.0.en.html">GNU Affero General Public License</a>.</p>
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--2-col mdl-cell--1-col-tablet mdl-cell--0-col-phone"></div>
+                </div>
+
+                <footer class="mdl-mini-footer">
+                    <div class="mdl-mini-footer__left-section">
+                        <div class="mdl-logo">
+                            <a href="https://github.com/dhlab-basel/Knora">Knora</a>
+                            |
+                        </div>
+                        <ul class="mdl-mini-footer__link-list">
+                            <li>
+                                <a href="http://dhlab.unibas.ch" title="Digital Humanities Lab (DHLab), University of Basel">Digital Humanities Lab</a>
+                            </li>
+                            <li>
+                                |
+                            </li>
+                            <li>
+                                <a href="http://unibas.ch">University of Basel</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mdl-mini-footer--right-section mdl-layout--large-screen-only">
+                        <a class="mdl-typography--font-regular mdl-button mdl-button--raised mdl-button--primary" href="https://github.com/dhlab-basel/Knora">
+                            Preview on GitHub
+                        </a>
+
+                    </div>
+                </footer>
+            </main>
+        </div>
+    </body>
+</html>
