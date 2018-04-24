@@ -8,7 +8,10 @@ These instructions are mostly intended for committers who would like to update t
 
 Install the needed ruby stuff using bundler:
 
-    bundle install
+```
+$ gem install jekyll bundler
+$ bundle
+```
 
 If in doubt, head over to the github pages-page for instructions: 
 https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/#step-4-build-your-local-jekyll-site
@@ -19,6 +22,9 @@ Github lists their versions of Jekyll etc. here: https://pages.github.com/versio
 
 After cloning, cd into the `dhlab-basel/knora.org` directory and run:
 
-    bundle exec jekyll serve --baseurl ''
+``` 
+$ bundle exec jekyll serve
+```
+
 
 To see the generated site, just visit `http://localhost:4000`.
