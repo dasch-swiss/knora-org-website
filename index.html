@@ -6,136 +6,108 @@ title: Knora
     <div class="container">
         <div class="column">
             <div>
-                <h1 class="editable">Knowledge Organization, Representation, and Annotation</h1>
-                <p class="editable">Knora is a software framework for storing, sharing, and working with primary sources and data in the humanities.</p>
+                <h1>Knowledge Organization, Representation, and Annotation</h1>
+                <p>Knora is a software framework for storing, sharing, and working with primary sources and data in the humanities.</p>
+                <!-- TODO: max. two links to the documentation / quick start or/and to demo (?) -->
                 <div class="button">
                     <a href="https://docs.knora.org">Getting started</a>
                 </div>
             </div>
         </div>
         <div class="column">
-            <img class="big-screen-only" src="/assets/images/digitaler-zettelkasten.png" alt="Digital Typewriter">
+            <img class="big-screen-only" src="/assets/images/digitaler-zettelkasten.png" alt="Digital filing cabinet">
         </div>
     </div>
 </header>
 
 <div class="container">
-    <h2 class="editable" style="text-align: center;">Features</h2>
-
+    <h2 style="text-align: center;">Features</h2>
+    <!-- TODO: Briefly describe Knora's main features (one sentence each), in not-too-technical language, with links to somewhat longer explanations (one paragraph each) -->
+    <!-- three features per line; 3 or 6 features!! -->
     <ul class="thirds">
-        {% for post in site.features %}
-            <div class="post">
-                <div class="image" style="background-image: url('{{ post.featured_image}}')"></div>
-                <div class="post-content">
-                    <p class="date">{{ post.date | date: '%B %d, %Y' }}</p>
-                    <h3>{{ post.title }}</h3>
-
-                    {{ post.content }}
-                    <!--
-                    <p class="editor-link"><a href="cloudcannon:collections/{{ post.path }}" class="btn"><strong>&#9998;</strong> Edit Update</a></p>
-                    -->
-                </div>
-            </div>
-        {% endfor %}
-
-        {% for post in site.features %}
-        <li>
-            <div class="image">{% include icons/site.html icon="population" %}</div>
-            <h3 class="editable">{{ post.title }}</h3>
-            <p class="editable">{{ post.content }}</p>
-        </li>
-        {% endfor %}
         <li>
             <div class="image"><i class="material-icons">storage</i></div>
-            <h3 class="editable">Storage</h3>
-            <p class="editable">Stores humanities data as industry-standard RDF graphs, plus files for binary data such as digitized primary sources.</p>
+            <h3>Storage</h3>
+            <p>Stores humanities data as industry-standard RDF graphs, plus files for binary data such as digitized primary sources.</p>
         </li>
 
         <li>
             <div class="image"><i class="material-icons">data_usage</i></div>
-            <h3 class="editable">Database</h3>
-            <p class="editable">Designed to work with any standards-compliant RDF triplestore. Tested with Ontotext GraphDB.</p>
+            <h3>Database</h3>
+            <p>Designed to work with any standards-compliant RDF triplestore. Tested with Ontotext GraphDB.</p>
         </li>
 
         <li>
             <div class="image"><i class="material-icons">share</i></div>
-            <h3 class="editable">Ontology</h3>
-            <p class="editable">Based on OWL ontologies that express abstract, cross-disciplinary commonalities in the structure and semantics of research data.</p>
+            <h3>Ontology</h3>
+            <p>Based on OWL ontologies that express abstract, cross-disciplinary commonalities in the structure and semantics of research data.</p>
         </li>
     </ul>
     <ul class="thirds">
         <li>
             <div class="image"><i class="material-icons">cloud</i></div>
-            <h3 class="editable">RESTful API</h3>
-            <p class="editable">Offers a generic HTTP-based API, implemented in Scala, for querying, annotating, and linking together heterogeneous data in a unified way.</p>
+            <h3>RESTful API</h3>
+            <p>Offers a generic HTTP-based API, implemented in Scala, for querying, annotating, and linking together heterogeneous data in a unified way.</p>
         </li>
 
         <li>
             <div class="image"><i class="material-icons">history</i></div>
-            <h3 class="editable">More features</h3>
-            <p class="editable">Provides automatic versioning of data and handles authentication and authorization.</p>
+            <h3>More features</h3>
+            <p>Provides automatic versioning of data and handles authentication and authorization.</p>
         </li>
 
         <li>
             <div class="image"><i class="material-icons">web</i></div>
-            <h3 class="editable">...and even more</h3>
-            <p class="editable">Includes {{ site.links.sipi }}, a high-performance media server implemented in C++.
+            <h3>...and even more</h3>
+            <p>Includes {{ site.links.sipi }}, a high-performance media server implemented in C++.
                 Provides a general-purpose, browser-based research environment called {{ site.links.salsah }}.</p>
         </li>
     </ul>
 </div>
 
+<!-- TODO: Clearly say what Knora is -->
+<!-- e.g. in the container "Our Mission" (please replace the title) or in the next container with the class "quote" -->
 <div class="container">
     <div class="columns">
         <div>
-            <img class="big-screen-only" src="/assets/images/digital-typewriter.png" alt="Digital Filing Cabinet">
+            <img class="big-screen-only" src="/assets/images/digital-typewriter.png" alt="Digital typewriter">
         </div>
         <div>
-            <h2 class="editable">Our Mission</h2>
-
-            <p class="editable">Leave no sheep behind. Our mission to give sheep the right to vote and have them represented in parliament. For too long sheep have been exploited for their warm wool and delicious meat. It's time to put our hooves down and baa for what's right. Give sheep the vote!</p>
+            <h2>Our Mission</h2>
+            <p>Leave no sheep behind. Our mission to give sheep the right to vote and have them represented in parliament. For too long sheep have been exploited for their warm wool and delicious meat. It's time to put our hooves down and baa for what's right. Give sheep the vote!</p>
         </div>
     </div>
 </div>
-
 <div class="container">
     <hr>
     <blockquote>
-        <p class="quote editable">The ultimate measure of a sheep is not where he stands in moments of comfort and convenience, but where he stands at times of challenge and controversy.</p>
+        <p class="quote">Knora is based on the idea that the continuous availability and reusability of digital qualitative research data in the humanities requires a common, flexible data representation and storage technology capable of performing queries across large quantities of heterogeneous data, organised according to project-specific data structures that cannot be known in advance. </p>
         <div class="attribute">
             <p class="meta">
-                <span class="image"><img class="editable" src="{{ site.baseurl }}/images/wooly.jpg" alt="Wooly"></span>
-                <span class="author editable"><strong>Wooly McBaa</strong></span>
+                <!-- <span class="image"><img src="{{ site.baseurl }}/images/wooly.jpg" alt="Wooly"></span> -->
+                <!-- <span class="author"><strong>Wooly McBaa</strong></span> -->
             </p>
         </div>
     </blockquote>
 </div>
 
+
 <div class="darker">
     <div class="container">
-        <h2 class="editable">Join us</h2>
-        <p class="editable" style="text-align: center;">Sign up to hear the latest news and progress in our fight for the sheep vote.</p>
-        <form action="{{ site.newsletter_action }}" method="post">
-            <input type="text" name="EMAIL" placeholder="Email">
-            <input type="submit" value="Sign up"/>
-        </form>
-    </div>
-</div>
-
-<!--
-    <div class="container" id="donate">
-        <h2 class="editable">Make a donation</h2>
-        <div class="donate">
-            {{ site.donation_embed }}
+        <!-- TODO: Provide links to: Code on GitHub -->
+        <h2>Join us</h2>
+        <p style="text-align: center;">Sign up to get the latest news and progress about Knora and improve our work on:</p>
+        <div class="button">
+            <a class="center" href="https://github.com/dhlab-basel/Knora">GitHub</a>
         </div>
     </div>
--->
+</div>
 
 <!--<div class="darker">-->
 <div>
     <div class="container">
-        <h2 class="editable">Updates</h2>
-        <!-- <p class="editor-link"><a href="cloudcannon:collections/_posts" class="btn"><strong>&#9998;</strong> Add Update</a></p> -->
+        <!-- TODO: News (e.g. new releases): News or Updates? New posts will be added from _posts folder -->
+        <h2>Updates</h2>
         <div class="posts">
             {% for post in site.posts %}
                 <div class="post">
@@ -143,10 +115,15 @@ title: Knora
                     <!-- <div class="image" style="background-image: url('{{ post.featured_image}}')"></div> -->
                     <div class="post-content">
                         <p class="date">{{ post.date | date: '%B %d, %Y' }}</p>
-                        <h3>{{ post.title }}</h3>
+                        <h3><a href="{{ post.url }}" >{{ post.title }}</a></h3>
 
                         {{ post.content }}
-                        <!-- <p class="editor-link"><a href="cloudcannon:collections/{{ post.path }}" class="btn"><strong>&#9998;</strong> Edit Update</a></p> -->
+
+                        {% if post.link %}
+                        <p class="center">
+                            <a href={{ post.link }}>&rarr; Release note on GitHub</a>
+                        </p>
+                        {% endif %}
                     </div>
                 </div>
             {% endfor %}

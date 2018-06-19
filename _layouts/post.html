@@ -6,5 +6,12 @@ layout: default
         <h2>{{ page.title }}</h2>
 
         {{ content }}
+
+        {% if page.link %}
+        <p class="center">
+            <br>
+            <a href={{ page.link }}>&rarr; Release note on GitHub</a>
+        </p>
+        {% endif %}
     </div>
 </section>

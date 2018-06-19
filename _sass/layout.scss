@@ -38,6 +38,11 @@ header {
         display: block;
         max-width: 100%;
     }
+
+    &.error-page {
+        @include background-cover();
+        height: calc(100vh - 250px - 120px);
+    }
 }
 
 header, nav {
