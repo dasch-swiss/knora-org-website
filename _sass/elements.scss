@@ -63,8 +63,7 @@ a {
   font-weight: bolder;
   text-decoration: none;
   &:hover {
-    color: lighten($brand-color, 15%);
-    //		text-decoration: underline;
+    color: lighten($brand-color, 15%); //		text-decoration: underline;
   }
 }
 
@@ -108,6 +107,17 @@ form {
   }
 }
 
+.action {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  .button {
+    align-self: center;
+    margin: 6px;
+  }
+}
+
 .button a,
 input[type="submit"],
 input[type="text"] {
@@ -141,5 +151,5 @@ input[type="submit"] {
 }
 
 p.center {
-    text-align: center;
+  text-align: center;
 }
