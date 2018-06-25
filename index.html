@@ -133,7 +133,7 @@ title: Knora
     <div class="container">
         <h2>News</h2>
         <div class="posts">
-            {% for post in site.posts %}
+            {% for post in site.posts limit: 3 %}
             <div class="post">
 
                 <!-- <div class="image" style="background-image: url('{{ post.featured_image}}')"></div> -->
