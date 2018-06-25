@@ -73,6 +73,20 @@ nav {
     fill: $brand-color;
     height: 35px;
   }
+
+  .button {
+      border: 3px solid lighten($brand-color, 15%);
+      color: lighten($brand-color, 15%);
+      background: #fff;
+      border-radius: 30px;
+      padding: 12px 36px;
+      box-sizing: content-box;
+
+      &:hover {
+          border-color: $brand-color;
+          color: $brand-color;
+      }
+  }
 }
 
 section {
