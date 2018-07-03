@@ -1,27 +1,97 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+# ----
+# Site
 
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
 title: Knora
-email: info@knora.org
-description: >- # this means to ignore newlines until "baseurl:"
-  This site represents the starting point for accessing the documentation of all the different components used in the
-  Knora stack
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://docs.knora.org" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: dhlabbasel
-github_username:  dhlab-basel
+url: https://www.knora.org
+baseurl:
+google_analytics_key:
 
-# Build settings
-markdown: kramdown
+company:
+  company_name: DHLab Basel
+  mission_statement: Digital Humanities Lab and Data and Service Center for the Humanities (DaSCH).
+  address: Bernoullistrasse 32, 4056 Basel
+  phone: +41 61 207 04 89
+  email: info@knora.org
+  twitter: dhlabbasel
+  github: dhlab-basel/knora
+
+
+
+
+links:
+  knora: <a href="https://knora.org">Knora</a>
+  knora-docs: <a href="https://docs.knora.org">Documentation</a>
+  sipi: <a href="https://sipi.io">Sipi</a>
+  salsah: <a href="https://dhlab-basel.github.io/Salsah">Salsah</a>
+  dhlab: <a href="https://dhlab.unibas.ch">Digital Humanities Lab</a>
+  dasch: <a href="https://dasch.swiss">Data and Service Center for the Humanities</a>
+  unibas: <a href="https://unibas.ch">University of Basel</a>
+
+
+# Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
+logo: /assets/images/touch-icon.png
+description: Knora is a software framework for storing, sharing, and working with primary sources and data in the humanities.
+author:
+  name: Digital Humanities Lab, University of Basel
+  email: info@knora.org
+  twitter: dhlabbasel # twitter username without the @ symbol
+social:
+  name: Digital Humanities Lab, University of Basel
+  links:
+    - https://github.com/dhlab-basel/knora
+    - https://dhlab.unibas.ch
+    - https://dasch.swiss
+    - https://knora.org
+
+# -----
+# Build
+
+timezone: Etc/UTC
+
+collections:
+  staff_members:
+    _hide_content: true
+    _options:
+      image:
+        width: 250
+        height: 250
+
+permalink: pretty
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      _options:
+        content:
+          width: 1880
+          height: 1880
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENCE
+
+# -----------
+# CloudCannon
+
+_options:
+  header_background_image:
+    width: 1880
+    height: 1880
+  newsletter_background_image:
+    width: 1880
+    height: 1880

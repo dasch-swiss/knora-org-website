@@ -6,25 +6,18 @@ These instructions are mostly intended for committers who would like to update t
 
 ## Dependencies
 
-Install the needed ruby stuff using bundler:
+Knora.org is built with [Jekyll](http://jekyllrb.com/) version 3.3.1, but should support newer versions as well.
 
-```
-$ gem install jekyll bundler
-$ bundle
-```
+Install the dependencies with [Bundler](http://bundler.io/):
 
-If in doubt, head over to the github pages-page for instructions: 
-https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/#step-4-build-your-local-jekyll-site
+~~~bash
+$ bundle install
+~~~
 
-Github lists their versions of Jekyll etc. here: https://pages.github.com/versions/
+Run `jekyll` commands through Bundler to ensure you're using the right versions:
 
-## Building
-
-After cloning, cd into the `dhlab-basel/knora.org` directory and run:
-
-``` 
+~~~bash
 $ bundle exec jekyll serve
-```
-
+~~~
 
 To see the generated site, just visit `http://localhost:4000`.

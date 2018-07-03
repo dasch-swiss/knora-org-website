@@ -1,5 +1,17 @@
 ---
 layout: default
 ---
+<section>
+    <div class="container">
+        <h2>{{ page.title }}</h2>
 
-{{ content }}
+        {{ content }}
+
+        {% if page.link %}
+        <p class="center">
+            <br>
+            <a href={{ page.link }}>&rarr; Read more on GitHub</a>
+        </p>
+        {% endif %}
+    </div>
+</section>
