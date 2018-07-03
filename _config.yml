@@ -23,9 +23,9 @@ links:
   knora-docs: <a href="https://docs.knora.org">Documentation</a>
   sipi: <a href="https://sipi.io">Sipi</a>
   salsah: <a href="https://dhlab-basel.github.io/Salsah">Salsah</a>
-  dhlab: <a href="https://dhlab.unibas.ch">Digital Humanities Lab</a>
-  dasch: <a href="https://dasch.swiss">Data and Service Center for the Humanities</a>
-  unibas: <a href="https://unibas.ch">University of Basel</a>
+  dhlab: <a href="http://dhlab.unibas.ch">Digital Humanities Lab</a>
+  dasch: <a href="http://dasch.swiss">Data and Service Center for the Humanities</a>
+  unibas: <a href="http://unibas.ch">University of Basel</a>
 
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
