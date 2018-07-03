@@ -19,9 +19,9 @@ header {
             flex: 1;
 
             img {
-//				max-width: none;
                 display: block;
-                width: 120%;
+                // width: 100%;
+                padding: 0 64px;
             }
 
             &:first-child {

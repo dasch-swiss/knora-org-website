@@ -10,7 +10,11 @@ body {
 img {
   max-width: 100%;
   &.logo {
-    max-width: 64px;
+    max-height: 64px;
+  }
+
+  &.shadow {
+    @include box-shadow();
   }
 }
 
