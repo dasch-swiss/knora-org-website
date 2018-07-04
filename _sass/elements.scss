@@ -4,7 +4,8 @@ body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
   color: #333;
-  min-width: 380px;
+  min-width: 320px;
+  width: 100%;
 }
 
 img {
@@ -18,20 +19,6 @@ img {
   }
 }
 
-/*
-@media #{$desktop} {
-	img.big-screen-only {
-		display: block;
-	}
-}
-
-@media #{$tablet} {
-	img.big-screen-only {
-		display: none;
-	}
-}
-*/
-
 hr {
   height: 1px;
   border: 0;
@@ -43,6 +30,10 @@ h1 {
   padding: 0;
   margin: 0 0 20px 0;
   font-size: 3em;
+
+  @media #{$mobile} {
+    font-size: 2.5em;
+  }
 }
 
 h2 {
@@ -130,6 +121,7 @@ form {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 64px;
   .button {
     align-self: center;
     margin: 6px;

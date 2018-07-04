@@ -7,6 +7,23 @@
     box-sizing: border-box;
 }
 
+@media #{$desktop} {
+    .mobile {
+        display: none;
+    }
+    .desktop {
+        display: block;
+    }
+}
+@media #{$mobile} {
+    .mobile {
+        display: block;
+    }
+    .desktop {
+        display: none;
+    }
+}
+
 header {
     padding-bottom: 50px;
 
@@ -18,9 +35,15 @@ header {
         .column {
             flex: 1;
 
-            img {
-                display: block;
-                // width: 100%;
+            .img-column {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .img-column > img {
+                height: 100%;
+                width: calc(100% - 128px);
+                margin: 48px auto 0 auto;
                 padding: 0 64px;
             }
 
@@ -31,12 +54,6 @@ header {
                 margin-right: 50px;
             }
         }
-    }
-
-    img {
-        margin: 100px auto 0 auto;
-        display: block;
-        max-width: 100%;
     }
 
     &.error-page {
@@ -58,15 +75,21 @@ header, nav {
 
 nav .button {
     position: absolute;
-    right: 35px;
-    top: 4px;
+    right: 24px;
+    top: 0;
+
+    @media #{$mobile} {
+        &.different-on-mobile {
+            border: none;
+        }
+    }
 }
 
 .thirds {
     @media #{$desktop} {
         display: flex;
     }
-    margin: 90px -15px 0 -15px;
+    margin: 90px -15px 0 0;
     padding: 0;
     list-style: none;
 
