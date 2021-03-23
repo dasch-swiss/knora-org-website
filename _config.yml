@@ -9,18 +9,18 @@ google_analytics_key:
 company:
   company_name: Data and Service Center for the Humanities (DaSCH)
   mission_statement: Data and Service Center for the Humanities (DaSCH).
-  address: Bernoullistrasse 32, 4056 Basel
+  address: Gewerbestrasse 24, 4123 Allschwil
   phone: +41 61 207 04 89
-  email: info@knora.org
-  twitter: dhlabbasel
-  github: dasch-swiss/knora-api
+  email: info@dasch.swiss
+  twitter: DaSCHSwiss
+  github: dasch-swiss
 
 
 
 
 links:
-  knora: <a href="https://knora.org">Knora</a>
-  knora-docs: <a href="https://docs.knora.org">Documentation</a>
+  knora: <a href="https://dsp.dasch.swiss">DaSCH Service Platform</a>
+  knora-docs: <a href="https://docs-api.dasch.swiss">Documentation</a>
   sipi: <a href="https://sipi.io">Sipi</a>
   knora-app: <a href="https://dasch-swiss.github.io/knora-app">Knora-App</a>
   dhlab: <a href="http://dhlab.unibas.ch">Digital Humanities Lab</a>
@@ -30,18 +30,17 @@ links:
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /assets/images/touch-icon.png
-description: Knora is a software framework for storing, sharing, and working with primary sources and data in the humanities.
+description: The DaSCH Service Platform is a software framework for storing, sharing, and working with primary sources and data in the humanities.
 author:
-  name: Digital Humanities Lab, University of Basel
-  email: info@knora.org
-  twitter: dhlabbasel # twitter username without the @ symbol
+  name: Data and Service Center for the Humanities, University of Basel
+  email: info@dasch.swiss
+  twitter: DaSCHSwiss # twitter username without the @ symbol
 social:
-  name: Digital Humanities Lab, University of Basel
+  name: Data and Service Center for the Humanities, University of Basel
   links:
-    - https://github.com/dasch-swiss/knora-api
-    - https://dhlab.unibas.ch
     - https://dasch.swiss
-    - https://knora.org
+    - https://github.com/dasch-swiss
+    
 
 # -----
 # Build
