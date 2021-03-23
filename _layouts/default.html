@@ -59,7 +59,7 @@
     <div class="container">
         <div class="about">
             <!-- <p>{{ site.company.mission_statement }}</p> -->
-            <p>Knora is developed by the team at the {{ site.links.dhlab }} and the {{ site.links.dasch }}</p>
+            <p>The DaSCH Service Platform is developed by the team at the {{ site.links.dasch }}</p>
         </div>
 
         <div class="contact">
@@ -68,6 +68,11 @@
                     {% include icons/footer.html icon="place" %} {{ site.company.address }}
                 </a>
             </address>
+            <p class="www">
+                <a href="https://{{ site.company.www }}">
+                    {% include icons/footer.html icon="www" %} {{ site.company.www }}
+                </a>
+            </p>
             <p class="email">
                 <a href="mailto:{{ site.company.email }}">
                     {% include icons/footer.html icon="email" %} {{ site.company.email }}
